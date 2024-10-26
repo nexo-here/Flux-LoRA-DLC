@@ -49,7 +49,9 @@ https://huggingface.co/spaces/prithivMLmods/FLUX-LoRA-DLC
 | 29  | sonny-anime-fixed | [Link](https://huggingface.co/alvdansen/sonny-anime-fixed) |
 | 30  | flux-multi-angle | [Link](https://huggingface.co/davisbro/flux-multi-angle) |
 
-& More ...
+& More 
+
+![img](assets/FLUX.png)
 
 # Space Inspired From
 
