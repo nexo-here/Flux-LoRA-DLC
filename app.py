@@ -183,6 +183,14 @@ def flux_pipe_call_that_returns_an_iterable_of_images(
 
 #-----------------------------------------------------------------------------------LoRA's--------------------------------------------------------------------------#
 loras = [
+    #0
+    {
+        "image": "https://huggingface.co/prithivMLmods/Uncoloured-Polygon-Flux-LoRA/resolve/main/images/1.webp",
+        "title": "Uncoloured Polygon",
+        "repo": "prithivMLmods/Uncoloured-Polygon-Flux-LoRA",
+        "weights": "Uncoloured-3D-Polygon.safetensors",
+        "trigger_word": "uncoloured polygon"      
+    },
     #1
     {
         "image": "https://huggingface.co/prithivMLmods/Canopus-LoRA-Flux-FaceRealism/resolve/main/images/11.png",
@@ -942,7 +950,7 @@ loras = [
     },
     #100
     {
-        "image": "https://huggingface.co/wavymulder/OverlordStyleFLUX/resolve/main/imgs/ComfyUI_00668_.png",
+        "image": "https://huggingface.co/marceloxp/canny-quest/resolve/main/26676266.jpeg",
         "title": "Canny quest",
         "repo": "marceloxp/canny-quest",
         "weights": "Canny_Quest-000004.safetensors",
@@ -971,7 +979,48 @@ loras = [
         "repo": "Shakker-Labs/FLUX.1-dev-LoRA-playful-metropolis",
         "weights": "FLUX-dev-lora-playful_metropolis.safetensors",
         "trigger_word": ""        
+    },
+    #104
+    {
+        "image": "https://huggingface.co/prithivMLmods/Castor-Character-Polygon-LoRA/resolve/main/images/1000.webp",
+        "title": "Character Polygon",
+        "repo": "prithivMLmods/Castor-Character-Polygon-Flux-LoRA",
+        "weights": "Castor-Character-Polygon-LoRA.safetensors",
+        "trigger_word": "3D Polygon"        
+    },
+    #105
+    {
+        "image": "https://huggingface.co/prithivMLmods/Castor-Gta6-Theme-Flux-LoRA/resolve/main/images/gta1.webp",
+        "title": "GTA 6 Theme",
+        "repo": "prithivMLmods/Castor-Gta6-Theme-Flux-LoRA",
+        "weights": "Gta6.safetensors",
+        "trigger_word": "GTA 6 Theme, World of GTA 6"        
+    },
+    #106
+    {
+        "image": "https://huggingface.co/prithivMLmods/Castor-Concept-Gta6-Character-Design/resolve/main/images/L3.webp",
+        "title": "GTA Character Concept",
+        "repo": "prithivMLmods/Castor-Flux-Concept-Gta6-Character-Design",
+        "weights": "Gta6-Concept-Charecter.safetensors",
+        "trigger_word": "Jason, Lucia, GTA 6"          
+    },
+    #107
+    {
+        "image": "https://huggingface.co/prithivMLmods/Castor-3D-Sketchfab-Flux-LoRA/resolve/main/images/S1.png",
+        "title": "3D Sketchfab",
+        "repo": "prithivMLmods/Castor-3D-Sketchfab-Flux-LoRA",
+        "weights": "Castor-3D-Sketchfab-Flux-LoRA.safetensors",
+        "trigger_word": "3D Sketchfab"    
+    },
+    #108
+    {
+        "image": "https://huggingface.co/prithivMLmods/Castor-Collage-Dim-Flux-LoRA/resolve/main/images/C1.webp",
+        "title": "In Image Collage",
+        "repo": "prithivMLmods/Castor-Collage-Dim-Flux-LoRA",
+        "weights": "Castor-Collage-Dim-Flux-LoRA.safetensors",
+        "trigger_word": "collage"          
     }
+
     #add new
 ]
 
@@ -1078,7 +1127,7 @@ def generate_image_to_image(prompt_mash, image_input_path, image_strength, steps
 @spaces.GPU(duration=100)
 def run_lora(prompt, image_input, image_strength, cfg_scale, steps, selected_index, randomize_seed, seed, width, height, lora_scale, progress=gr.Progress(track_tqdm=True)):
     if selected_index is None:
-        raise gr.Error("You must select a LoRA before proceeding.")
+        raise gr.Error("You must select a LoRA before proceeding.🧨")
     selected_lora = loras[selected_index]
     lora_path = selected_lora["repo"]
     trigger_word = selected_lora["trigger_word"]
@@ -1238,7 +1287,7 @@ with gr.Blocks(theme="prithivMLmods/Minecraft-Theme", css=css, delete_cache=(60,
     selected_index = gr.State(None)
     with gr.Row():
         with gr.Column(scale=3):
-            prompt = gr.Textbox(label="Prompt", lines=1, placeholder="Choose the LoRA and type the prompt")
+            prompt = gr.Textbox(label="Prompt", lines=1, placeholder=":/ choose the LoRA and type the prompt ")
         with gr.Column(scale=1, elem_id="gen_column"):
             generate_button = gr.Button("Generate", variant="primary", elem_id="gen_btn")
     with gr.Row():
