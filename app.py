@@ -27,6 +27,16 @@ from huggingface_hub import (
 
 import spaces
 
+#---if env = local or colab---
+
+# Authenticate with Hugging Face
+# from huggingface_hub import login
+
+# Log in to Hugging Face using the provided token
+# hf_token = 'hf-token-authentication'
+# login(hf_token)
+
+
 def calculate_shift(
     image_seq_len,
     base_seq_len: int = 256,
@@ -185,11 +195,11 @@ def flux_pipe_call_that_returns_an_iterable_of_images(
 loras = [
     #0
     {
-        "image": "https://huggingface.co/prithivMLmods/Uncoloured-Polygon-Flux-LoRA/resolve/main/images/1.webp",
-        "title": "Uncoloured Polygon",
-        "repo": "prithivMLmods/Uncoloured-Polygon-Flux-LoRA",
-        "weights": "Uncoloured-3D-Polygon.safetensors",
-        "trigger_word": "uncoloured polygon"      
+        "image": "https://huggingface.co/prithivMLmods/Castor-Dramatic-Neon-Flux-LoRA/resolve/main/images/DN2.webp",
+        "title": "Dramatic Neon",
+        "repo": "prithivMLmods/Castor-Dramatic-Neon-Flux-LoRA",
+        "weights": "Dramatic-Neon-Flux-LoRA.safetensors",
+        "trigger_word": "Dramatic Neon"     
     },
     #1
     {
@@ -652,7 +662,7 @@ loras = [
     },
     #63
     {
-        "image": "https://cdn-lfs-us-1.hf.co/repos/54/4c/544c698f7773c5b6ada5c775eb35ce2d389bc2420e69e0745ce4d6a22c16223b/6afc4284603ec3f7184dfd4418453fba050800f8b8d620c8b17a36351002c680?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27ComfyUI_00751_.png%3B+filename%3D%22ComfyUI_00751_.png%22%3B&response-content-type=image%2Fpng&Expires=1729841459&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTcyOTg0MTQ1OX19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmhmLmNvL3JlcG9zLzU0LzRjLzU0NGM2OThmNzc3M2M1YjZhZGE1Yzc3NWViMzVjZTJkMzg5YmMyNDIwZTY5ZTA3NDVjZTRkNmEyMmMxNjIyM2IvNmFmYzQyODQ2MDNlYzNmNzE4NGRmZDQ0MTg0NTNmYmEwNTA4MDBmOGI4ZDYyMGM4YjE3YTM2MzUxMDAyYzY4MD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=u4c4cxEuW7%7EnJ6cSBGi42gcxCnWewSSLamrorwF6NNX5fNZCptHJtC7KOWt8f29v4fu7hDobRVMoyud0-zvaHenw6aGsmkyyKPvX-WfODx3N7UK2sMdj0-vFCY0qFssG2cH1Cpilt7cug9QFpQ3e9W5OQg6onXiwhVJQnf%7ES-Btv-DVeqC-7Wcjz4hyLhYPR03b6Ys7s0N0pI9egZsPJ9XeJkBOw5dw1cp-V21j-ZhjmsoldKKKN19lTFcaK3iogCyZon9nRiOVDAL5FKYf9e2tStbcKkHbTKdHyJWJt1YSw6X3b%7Ef4b2GXdlhMbRuB9RM6B4h1RNYNGwYNjEMhMhA__&Key-Pair-Id=K24J24Z295AEI9",
+        "image": "https://huggingface.co/alvdansen/haunted_linework_flux/resolve/main/images/ComfyUI_00755_.png",
         "title": "Linework",
         "repo": "alvdansen/haunted_linework_flux",
         "weights": "hauntedlinework_flux_araminta_k.safetensors",
@@ -1019,7 +1029,113 @@ loras = [
         "repo": "prithivMLmods/Castor-Collage-Dim-Flux-LoRA",
         "weights": "Castor-Collage-Dim-Flux-LoRA.safetensors",
         "trigger_word": "collage"          
-    }
+    },
+    #109
+    {
+        "image": "https://huggingface.co/brushpenbob/flux-midjourney-anime/resolve/main/25439344.jpeg",
+        "title": "Anime Journey",
+        "repo": "brushpenbob/flux-midjourney-anime",
+        "weights": "FLUX_MidJourney_Anime.safetensors",
+        "trigger_word": "egmid"      
+    },
+    #110
+    {
+        "image": "https://huggingface.co/glif-loradex-trainer/maxxd4240_minimalistPastel/resolve/main/samples/1727255690613__000002500_0.jpg",
+        "title": "Min Pastel",
+        "repo": "glif-loradex-trainer/maxxd4240_minimalistPastel",
+        "weights": "minimalistPastel.safetensors",
+        "trigger_word": "minimalistPastel"         
+    },
+    #111
+    {
+        "image": "https://huggingface.co/prithivMLmods/Castor-Red-Dead-Redemption-2-Flux-LoRA/resolve/main/images/rdr12.webp",
+        "title": "RDR2",
+        "repo": "prithivMLmods/Castor-Red-Dead-Redemption-2-Flux-LoRA",
+        "weights": "Castor-Red-Dead-Redemption-2-Flux-LoRA.safetensors",
+        "trigger_word": "Red Dead Redemption 2"     
+    },
+    #112
+    {
+        "image": "https://huggingface.co/WizWhite/wizard-s-paper-model-universe/resolve/main/35746354.jpeg",
+        "title": "Paper Model",
+        "repo": "WizWhite/wizard-s-paper-model-universe",
+        "weights": "Wiz-Paper_Model_Universe.safetensors",
+        "trigger_word": "A paper model" 
+    },
+    #113
+    {
+        "image": "https://huggingface.co/renderartist/retrocomicflux/resolve/main/images/ComfyUI_temp_ipugi_00040_.png",
+        "title": "Retrocomic Flux",
+        "repo": "renderartist/retrocomicflux",
+        "weights": "Retro_Comic_Flux_v1_renderartist.safetensors",
+        "trigger_word": "comic book panel"         
+    },
+    #114
+    {
+        "image": "https://huggingface.co/prithivMLmods/Castor-Happy-Halloween-Flux-LoRA/resolve/main/images/hw1.webp",
+        "title": "Halloween Flux",
+        "repo": "prithivMLmods/Castor-Happy-Halloween-Flux-LoRA",
+        "weights": "Castor-Happy-Halloween-Flux-LoRA.safetensors",
+        "trigger_word": "happy halloween" 
+    },
+    #115
+    {
+        "image": "https://huggingface.co/prithivMLmods/Castor-3D-Portrait-Flux-LoRA/resolve/main/images/1.webp",
+        "title": "Castor-3D-Portrait",
+        "repo": "prithivMLmods/Castor-3D-Portrait-Flux-LoRA",
+        "weights": "Castor-3D-Portrait-Flux-LoRA.safetensors",
+        "trigger_word": "3D Portrait" 
+    },
+    #116
+    {
+        "image": "https://huggingface.co/renderartist/coloringbookflux/resolve/main/images/ComfyUI_09731_.png",
+        "title": "Coloring book flux",
+        "repo": "renderartist/coloringbookflux",
+        "weights": "c0l0ringb00k_Flux_v1_renderartist.safetensors",
+        "trigger_word": "c0l0ringb00k, coloring book, coloring book page"        
+    },
+    #117
+    {
+        "image": "https://huggingface.co/prithivMLmods/Uncoloured-Polygon-Flux-LoRA/resolve/main/images/1.webp",
+        "title": "Uncoloured Polygon",
+        "repo": "prithivMLmods/Uncoloured-Polygon-Flux-LoRA",
+        "weights": "Uncoloured-3D-Polygon.safetensors",
+        "trigger_word": "uncoloured polygon"           
+    },
+    #118
+    {
+        "image": "https://huggingface.co/prithivMLmods/Past-Present-Deep-Mix-Flux-LoRA/resolve/main/images/PP3.webp",
+        "title": "Past Present Mix",
+        "repo": "prithivMLmods/Past-Present-Deep-Mix-Flux-LoRA",
+        "weights": "Past-Present-Deep-Mix-Flux-LoRA.safetensors",
+        "trigger_word": "Mixing Past and Present"      
+    },
+    #119
+    {
+        "image": "https://huggingface.co/gokaygokay/Flux-Double-Exposure-LoRA/resolve/main/images/image3.jpg",
+        "title": "Double Exposure",
+        "repo": "gokaygokay/Flux-Double-Exposure-LoRA",
+        "weights": "double_exposure.safetensors",
+        "trigger_word": "dblxpsr"       
+    },
+    #120
+    {
+        "image": "https://huggingface.co/gokaygokay/Flux-Seamless-Texture-LoRA/resolve/main/images/image3.jpg",
+        "title": "Seamless Texture",
+        "repo": "gokaygokay/Flux-Seamless-Texture-LoRA",
+        "weights": "seamless_texture.safetensors",
+        "trigger_word": "smlstxtr"          
+    },
+    #121
+    {
+        "image": "https://huggingface.co/prithivMLmods/Mockup-Texture-Flux-LoRA/resolve/main/images/MU1.webp",
+        "title": "Mockup Texture",
+        "repo": "prithivMLmods/Mockup-Texture-Flux-LoRA",
+        "weights": "Mockup-Texture.safetensors",
+        "trigger_word": "Mockup"      
+    },
+    #122
+  
 
     #add new
 ]
