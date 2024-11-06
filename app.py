@@ -1135,7 +1135,245 @@ loras = [
         "trigger_word": "Mockup"      
     },
     #122
-  
+    {
+        "image": "https://huggingface.co/prithivMLmods/Ton618-Tarot-Cards-Flux-LoRA/resolve/main/images/c2.webp",
+        "title": "Tarot Cards",
+        "repo": "prithivMLmods/Ton618-Tarot-Cards-Flux-LoRA",
+        "weights": "Tarot-card.safetensors",
+        "trigger_word": "Tarot card"          
+    },
+    #123
+    {
+        "image": "https://huggingface.co/prithivMLmods/Ton618-Amxtoon-Flux-LoRA/resolve/main/images/am1.webp",
+        "title": "Amxtoon",
+        "repo": "prithivMLmods/Ton618-Amxtoon-Flux-LoRA",
+        "weights": "Amxtoon.safetensors",
+        "trigger_word": "Amxtoon"          
+    },
+    #124
+    {
+        "image": "https://huggingface.co/prithivMLmods/Ton618-Epic-Realism-Flux-LoRA/resolve/main/images/ep3.png",
+        "title": "Epic Realism",
+        "repo": "prithivMLmods/Ton618-Epic-Realism-Flux-LoRA",
+        "weights": "Epic-Realism-Unpruned.safetensors",
+        "trigger_word": "Epic Realism"         
+    },
+    #125
+    {
+        "image": "https://huggingface.co/bingbangboom/flux-mixReality/resolve/main/images/3.jpg",
+        "title": "Mixed Reality",
+        "repo": "bingbangboom/flux-mixReality",
+        "weights": "HLFILSTHLFPHTO_000002500.safetensors",
+        "trigger_word": "in the style of HLFILSTHLFPHTO"          
+    },
+    #126
+    {
+        "image": "https://huggingface.co/sWizad/pokemon-trainer-sprites-pixelart-flux/resolve/main/26578919.jpeg",
+        "title": "Pixelart",
+        "repo": "sWizad/pokemon-trainer-sprites-pixelart-flux",
+        "weights": "pktrainer_F1-v1-0.safetensors",
+        "trigger_word": "pixel image of, pixel art"        
+    },
+    #127
+    {
+        "image": "https://huggingface.co/bingbangboom/flux_colorscape/resolve/main/images/2.jpg",
+        "title": "Colorscape",
+        "repo": "bingbangboom/flux_colorscape",
+        "weights": "flux_colorscape.safetensors",
+        "trigger_word": "illustration in the style of ASstyle001"         
+    },
+    #128
+    {
+        "image": "https://huggingface.co/UmeAiRT/FLUX.1-dev-LoRA-Modern_Pixel_art/resolve/main/images/c363192f-5fa0-4539-8295-b8d9e3e96747.jpeg",
+        "title": "Modern Pixel art",
+        "repo": "UmeAiRT/FLUX.1-dev-LoRA-Modern_Pixel_art",
+        "weights": "ume_modern_pixelart.safetensors",
+        "trigger_word": "umempart"             
+    },
+    #129
+    {
+        "image": "https://huggingface.co/prithivMLmods/Ton618-Only-Stickers-Flux-LoRA/resolve/main/images/222.png",
+        "title": "Sticker",
+        "repo": "prithivMLmods/Ton618-Only-Stickers-Flux-LoRA",
+        "weights": "only-stickers.safetensors",
+        "trigger_word": "Only Sticker"          
+    },
+    #130
+    {
+        "image": "https://huggingface.co/prithivMLmods/Ton618-Space-Wallpaper-LoRA/resolve/main/images/222.png",
+        "title": "Space Wallpaper",
+        "repo": "prithivMLmods/Ton618-Space-Wallpaper-LoRA",
+        "weights": "space-wallpaper-xl.safetensor",
+        "trigger_word": "Space Wallpaper"        
+    },
+    #131
+    {
+        "image": "https://huggingface.co/prithivMLmods/Canopus-Pixar-3D-Flux-LoRA/resolve/main/images/11111.png",
+        "title": "Pixar 3D",
+        "repo": "prithivMLmods/Canopus-Pixar-3D-Flux-LoRA",
+        "weights": "Canopus-Pixar-3D-FluxDev-LoRA.safetensors",
+        "trigger_word": "Pixar 3D"         
+    },
+    #132
+    {
+        "image": "https://huggingface.co/prithivMLmods/EBook-Creative-Cover-Flux-LoRA/resolve/main/images/E2.png",
+        "title": "EBook Cover",
+        "repo": "prithivMLmods/EBook-Creative-Cover-Flux-LoRA",
+        "weights": "EBook-Cover.safetensors",
+        "trigger_word": "EBook Cover"         
+    },
+    #133
+    {
+        "image": "https://huggingface.co/prithivMLmods/Minimal-Futuristic-Flux-LoRA/resolve/main/images/MF3.png",
+        "title": "Minimal Futuristic",
+        "repo": "prithivMLmods/Minimal-Futuristic-Flux-LoRA",
+        "weights": "Minimal-Futuristic.safetensors",
+        "trigger_word": "Minimal Futuristic"         
+    },
+    #134
+    {
+        "image": "https://huggingface.co/prithivMLmods/Seamless-Pattern-Design-Flux-LoRA/resolve/main/images/SP1.png",
+        "title": "Seamless Pattern",
+        "repo": "prithivMLmods/Seamless-Pattern-Design-Flux-LoRA",
+        "weights": "Seamless-Pattern-Design.safetensors",
+        "trigger_word": "Seamless Pattern Design"          
+    },
+    #135
+    {
+        "image": "https://huggingface.co/prithivMLmods/Logo-Design-Flux-LoRA/resolve/main/images/LD1.png",
+        "title": "Logo Design",
+        "repo": "prithivMLmods/Logo-Design-Flux-LoRA",
+        "weights": "Logo-design.safetensors",
+        "trigger_word": "Logo Design"         
+    },
+    #136
+    {
+        "image": "https://huggingface.co/prithivMLmods/Coloring-Book-Flux-LoRA/resolve/main/images/EB1.png",
+        "title": "Coloring Book",
+        "repo": "prithivMLmods/Coloring-Book-Flux-LoRA",
+        "weights": "coloring-book.safetensors",
+        "trigger_word": "Coloring Book"    
+    },
+    #137
+    {
+        "image": "https://huggingface.co/prithivMLmods/Intense-Red-Flux-LoRA/resolve/main/images/IR1.png",
+        "title": "Intense Red",
+        "repo": "prithivMLmods/Intense-Red-Flux-LoRA",
+        "weights": "Intense-Red.safetensors",
+        "trigger_word": "Intense Red"         
+    },
+    #138
+    {
+        "image": "https://huggingface.co/prithivMLmods/Glowing-Body-Flux-LoRA/resolve/main/images/GB3.png",
+        "title": "Glowing Body Flux",
+        "repo": "prithivMLmods/Glowing-Body-Flux-LoRA",
+        "weights": "Glowing-Body.safetensors",
+        "trigger_word": "Glowing Body"          
+    },
+    #139
+    {
+        "image": "https://huggingface.co/prithivMLmods/Electric-Blue-Flux-LoRA/resolve/main/images/EB3.png",
+        "title": "Electric Blue",
+        "repo": "prithivMLmods/Electric-Blue-Flux-LoRA",
+        "weights": "Electric-Blue.safetensors",
+        "trigger_word": "Electric Blue"         
+    },
+    #140
+    {
+        "image": "https://huggingface.co/prithivMLmods/Clouds-Illusion-Flux-LoRA/resolve/main/images/CI2.png",
+        "title": "Clouds Illusion",
+        "repo": "prithivMLmods/Clouds-Illusion-Flux-LoRA",
+        "weights": "Clouds-Illusion.safetensors",
+        "trigger_word": "Clouds Illusion"        
+    },
+    #141
+    {
+        "image": "https://huggingface.co/prithivMLmods/Digital-Yellow-Flux-LoRA/resolve/main/images/DY3.png",
+        "title": "Digital Yellow",
+        "repo": "prithivMLmods/Digital-Yellow-Flux-LoRA",
+        "weights": "Digital-Yellow.safetensors",
+        "trigger_word": "Digital Yellow"          
+    },
+    #142
+    {
+        "image": "https://huggingface.co/cfahlgren1/flux-qwen-capybara/resolve/main/images/example_72ao6twvk.png",
+        "title": "Flux Qwen Capybara",
+        "repo": "cfahlgren1/flux-qwen-capybara",
+        "weights": "flux-qwen-capybara.safetensors",
+        "trigger_word": "QWENCAPY"          
+    },
+    #143
+    {
+        "image": "https://huggingface.co/dasdsff/PleinAirArt/resolve/main/images/e7499ccc-7504-4086-842f-275a5428ef0e.jpg",
+        "title": "Plein Air Art ",
+        "repo": "dasdsff/PleinAirArt",
+        "weights": "PleinAir_000002500.safetensors",
+        "trigger_word": "P1e!n"        
+    },
+    #144
+    {
+        "image": "https://huggingface.co/prithivMLmods/Orange-Chroma-Flux-LoRA/resolve/main/images/OC1.png",
+        "title": "Orange Chroma",
+        "repo": "prithivMLmods/Orange-Chroma-Flux-LoRA",
+        "weights": "Orange-Chroma.safetensors",
+        "trigger_word": "Orange Chroma"        
+    },
+    #145
+    {
+        "image": "https://huggingface.co/prithivMLmods/Lime-Green-Flux-LoRA/resolve/main/images/LM1.png",
+        "title": "Lime Green",
+        "repo": "prithivMLmods/Lime-Green-Flux-LoRA",
+        "weights": "Lime-Green.safetensors",
+        "trigger_word": "Lime Green"         
+    },
+    #146
+    {
+        "image": "https://huggingface.co/prithivMLmods/Fractured-Line-Flare/resolve/main/images/FS1.png",
+        "title": "Line Flare",
+        "repo": "prithivMLmods/Fractured-Line-Flare",
+        "weights": "Fractured-Line-Flare.safetensors",
+        "trigger_word": "Fractured Line Flare"        
+    },
+    #147
+    {
+        "image": "https://huggingface.co/prithivMLmods/Golden-Dust-Flux-LoRA/resolve/main/images/GD2.png",
+        "title": "Golden Dust",
+        "repo": "prithivMLmods/Golden-Dust-Flux-LoRA",
+        "weights": "Golden-Dust.safetensors",
+        "trigger_word": "Golden Dust"         
+    },
+    #148
+    {
+        "image": "https://huggingface.co/prithivMLmods/Purple-Dreamy-Flux-LoRA/resolve/main/images/PD3.png",
+        "title": "Purple Dream",
+        "repo": "prithivMLmods/Purple-Dreamy-Flux-LoRA",
+        "weights": "Purple-Dreamy.safetensors",
+        "trigger_word": "Purple Dreamy"          
+    },
+    #149
+    {
+        "image": "https://huggingface.co/tryonlabs/FLUX.1-dev-LoRA-Outfit-Generator/resolve/main/images/sample7.jpeg",
+        "title": "Outfit Generator",
+        "repo": "tryonlabs/FLUX.1-dev-LoRA-Outfit-Generator",
+        "weights": "outfit-generator.safetensors",
+        "trigger_word": "Outfit"         
+    },
+    #150
+    {
+        "image": "https://huggingface.co/davisbro/half_illustration/resolve/main/images/example1.webp",
+        "title": "Half Illustration",
+        "repo": "davisbro/half_illustration",
+        "weights": "flux_train_replicate.safetensors",
+        "trigger_word": "in the style of TOK"           
+    },
+    #151
+    {
+        "image": "https://huggingface.co/bingbangboom/flux_oilscape/resolve/main/extras/3.jpg",
+        "title": "Oilscape",
+        "repo": "bingbangboom/flux_oilscape",
+        "weights": "flux_Oilstyle.safetensors",
+        "trigger_word": "in the style of Oilstyle002"           
+    }
 
     #add new
 ]
