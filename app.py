@@ -195,11 +195,11 @@ def flux_pipe_call_that_returns_an_iterable_of_images(
 loras = [
     #0
     {
-        "image": "https://huggingface.co/prithivMLmods/Castor-Dramatic-Neon-Flux-LoRA/resolve/main/images/DN2.webp",
-        "title": "Dramatic Neon",
-        "repo": "prithivMLmods/Castor-Dramatic-Neon-Flux-LoRA",
-        "weights": "Dramatic-Neon-Flux-LoRA.safetensors",
-        "trigger_word": "Dramatic Neon"     
+        "image": "https://huggingface.co/prithivMLmods/Purple-Dreamy-Flux-LoRA/resolve/main/images/PD3.png",
+        "title": "Purple Dream",
+        "repo": "prithivMLmods/Purple-Dreamy-Flux-LoRA",
+        "weights": "Purple-Dreamy.safetensors",
+        "trigger_word": "Purple Dreamy"    
     },
     #1
     {
@@ -217,10 +217,10 @@ loras = [
     },
     #3
     {
-        "image": "https://huggingface.co/prithivMLmods/Canopus-LoRA-Flux-Anime/resolve/main/assets/4.png",
-        "title": "Flux Anime",
-        "repo": "prithivMLmods/Canopus-LoRA-Flux-Anime",
-        "trigger_word": "Anime"
+        "image": "https://huggingface.co/prithivMLmods/Fashion-Hut-Modeling-LoRA/resolve/main/images/MO1.png",
+        "title": "Modeling Hut",
+        "repo": "prithivMLmods/Fashion-Hut-Modeling-LoRA",
+        "trigger_word": "Modeling of"
     },
     #4
     {
@@ -259,10 +259,10 @@ loras = [
     },
     #9
     {
-        "image": "https://huggingface.co/alvdansen/frosting_lane_flux/resolve/main/images/content%20-%202024-08-11T010011.238.jpeg",
-        "title": "Frosting Lane",
-        "repo": "alvdansen/frosting_lane_flux",
-        "trigger_word": "frstingln illustration"
+        "image": "https://huggingface.co/prithivMLmods/Canopus-LoRA-Flux-Anime/resolve/main/assets/4.png",
+        "title": "Flux Anime",
+        "repo": "prithivMLmods/Canopus-LoRA-Flux-Anime",
+        "trigger_word": "Anime"
     },
     #10
     {
@@ -1344,11 +1344,11 @@ loras = [
     },
     #148
     {
-        "image": "https://huggingface.co/prithivMLmods/Purple-Dreamy-Flux-LoRA/resolve/main/images/PD3.png",
-        "title": "Purple Dream",
-        "repo": "prithivMLmods/Purple-Dreamy-Flux-LoRA",
-        "weights": "Purple-Dreamy.safetensors",
-        "trigger_word": "Purple Dreamy"          
+        "image": "https://huggingface.co/prithivMLmods/Castor-Dramatic-Neon-Flux-LoRA/resolve/main/images/DN2.webp",
+        "title": "Dramatic Neon",
+        "repo": "prithivMLmods/Castor-Dramatic-Neon-Flux-LoRA",
+        "weights": "Dramatic-Neon-Flux-LoRA.safetensors",
+        "trigger_word": "Dramatic Neon"         
     },
     #149
     {
@@ -1373,8 +1373,158 @@ loras = [
         "repo": "bingbangboom/flux_oilscape",
         "weights": "flux_Oilstyle.safetensors",
         "trigger_word": "in the style of Oilstyle002"           
+    },
+    #152
+    {
+        "image": "https://huggingface.co/prithivMLmods/Red-Undersea-Flux-LoRA/resolve/main/images/RU1.png",
+        "title": "Red Undersea Flux",
+        "repo": "prithivMLmods/Red-Undersea-Flux-LoRA",
+        "weights": "Red-Undersea.safetensors",
+        "trigger_word": "Red Undersea"          
+    },
+    #153
+    {
+        "image": "https://huggingface.co/prithivMLmods/3D-Render-Flux-LoRA/resolve/main/images/3D2.png",
+        "title": "3D Render Flux LoRA",
+        "repo": "prithivMLmods/3D-Render-Flux-LoRA",
+        "weights": "3D_Portrait.safetensors",
+        "trigger_word": "3D Portrait, 3d render"        
+    },
+    #154
+    {
+        "image": "https://huggingface.co/prithivMLmods/Yellow-Pop-Flux-Dev-LoRA/resolve/main/images/YP1.png",
+        "title": "Yellow Pop Flux",
+        "repo": "prithivMLmods/Yellow-Pop-Flux-Dev-LoRA",
+        "weights": "Yellow_Pop.safetensors",
+        "trigger_word": "Yellow Pop"           
+    },
+    #155
+    {
+        "image": "https://huggingface.co/prithivMLmods/Purple-Grid-Flux-LoRA/resolve/main/images/PG2.png",
+        "title": "Purple Grid Flux",
+        "repo": "prithivMLmods/Purple-Grid-Flux-LoRA",
+        "weights": "Purple_Grid.safetensors",
+        "trigger_word": "Purple Grid"           
+    },
+    #156
+    {
+        "image": "https://huggingface.co/prithivMLmods/Dark-Thing-Flux-LoRA/resolve/main/images/DT2.png",
+        "title": "Dark Thing Flux",
+        "repo": "prithivMLmods/Dark-Thing-Flux-LoRA",
+        "weights": "Dark_Creature.safetensors",
+        "trigger_word": "Dark Creature"          
+    },
+    #157
+    {
+        "image": "https://huggingface.co/prithivMLmods/Shadow-Projection-Flux-LoRA/resolve/main/images/SP2.png",
+        "title": "Shadow Projection",
+        "repo": "prithivMLmods/Shadow-Projection-Flux-LoRA",
+        "weights": "Shadow-Projection.safetensors",
+        "trigger_word": "Shadow Projection"           
+    },
+    #158
+    {
+        "image": "https://huggingface.co/prithivMLmods/Street-Bokeh-Flux-LoRA/resolve/main/images/SB2.png",
+        "title": "Street Bokeh",
+        "repo": "prithivMLmods/Street-Bokeh-Flux-LoRA",
+        "weights": "Street_Bokeh.safetensors",
+        "trigger_word": "Street Bokeh"           
+    },
+    #159
+    {
+        "image": "https://huggingface.co/prithivMLmods/Abstract-Cartoon-Flux-LoRA/resolve/main/images/AC2.png",
+        "title": "Abstract Cartoon",
+        "repo": "prithivMLmods/Abstract-Cartoon-Flux-LoRA",
+        "weights": "Abstract-Cartoon.safetensors",
+        "trigger_word": "Abstract Cartoon"         
+    },
+    #160
+    {
+        "image": "https://huggingface.co/Norod78/CartoonStyle-flux-lora/resolve/main/samples/1725344450635__000003800_1.jpg",
+        "title": "Cartoon Style Flux",
+        "repo": "Norod78/CartoonStyle-flux-lora",
+        "weights": "CartoonStyle_flux_lora.safetensors",
+        "trigger_word": ""          
+    },
+    #161
+    {
+        "image": "https://huggingface.co/prithivMLmods/Digital-Chaos-Flux-LoRA/resolve/main/images/HDRDC3.webp",
+        "title": "HDR Digital Chaos",
+        "repo": "prithivMLmods/Digital-Chaos-Flux-LoRA",
+        "weights": "HDR-Digital-Chaos.safetensors",
+        "trigger_word": "Digital Chaos"         
+    },
+    #162
+    {
+        "image": "https://huggingface.co/prithivMLmods/Yellow-Laser-Flux-LoRA/resolve/main/images/YL1.png",
+        "title": "Yellow Laser",
+        "repo": "prithivMLmods/Yellow-Laser-Flux-LoRA",
+        "weights": "Yellow-Laser.safetensors",
+        "trigger_word": "Yellow Lasers"        
+    },
+    #163
+    {
+        "image": "https://huggingface.co/prithivMLmods/Bold-Shadows-Flux-LoRA/resolve/main/images/BS1.png",
+        "title": "Bold Shadows",
+        "repo": "prithivMLmods/Bold-Shadows-Flux-LoRA",
+        "weights": "Bold-Shadows.safetensors",
+        "trigger_word": "Bold Shadows"         
+    },
+    #164
+    {
+        "image": "https://huggingface.co/prithivMLmods/Knitted-Character-Flux-LoRA/resolve/main/images/KC1.png",
+        "title": "Knitted Character",
+        "repo": "prithivMLmods/Knitted-Character-Flux-LoRA",
+        "weights": "Knitted-Character.safetensors",
+        "trigger_word": "Knitted Character"          
+    },
+    #165
+    {
+        "image": "https://huggingface.co/alvdansen/frosting_lane_flux/resolve/main/images/content%20-%202024-08-11T010011.238.jpeg",
+        "title": "Frosting Lane",
+        "repo": "alvdansen/frosting_lane_flux",
+        "trigger_word": "frstingln illustration"
+    },
+    #166
+    {
+        "image": "https://huggingface.co/prithivMLmods/Flux-Realism-FineDetailed/resolve/main/images/FD2.png",
+        "title": "Fine Detailed Character",
+        "repo": "prithivMLmods/Flux-Realism-FineDetailed",
+        "weights": "Flux-Realism-FineDetailed.safetensors",
+        "trigger_word": "Fine Detailed"           
+    },
+    #167
+    {
+        "image": "https://huggingface.co/prithivMLmods/Aura-9999/resolve/main/images/A3.png",
+        "title": "Aura 9999+",
+        "repo": "prithivMLmods/Aura-9999",
+        "weights": "Aura-9999.safetensors",
+        "trigger_word": "Aura 9999"          
+    },
+    #168
+    {
+        "image": "https://huggingface.co/prithivMLmods/Pastel-BG-Flux-LoRA/resolve/main/images/PB2.png",
+        "title": "Pastel BG",
+        "repo": "prithivMLmods/Pastel-BG-Flux-LoRA",
+        "weights": "Pastel-BG.safetensors",
+        "trigger_word": "Pastel BG"         
+    },
+    #169
+    {
+        "image": "https://huggingface.co/prithivMLmods/Green-Cartoon-Flux-LoRA/resolve/main/images/GC1.png",
+        "title": "Green Cartoon",
+        "repo": "prithivMLmods/Green-Cartoon-Flux-LoRA",
+        "weights": "Green-Cartoon.safetensors",
+        "trigger_word": "Green Cartoon"        
+    },
+    #170
+    {
+        "image": "https://huggingface.co/prithivMLmods/Retro-Pixel-Flux-LoRA/resolve/main/images/RP1.png",
+        "title": "Retro Pixel",
+        "repo": "prithivMLmods/Retro-Pixel-Flux-LoRA",
+        "weights": "Retro-Pixel.safetensors",
+        "trigger_word": "Retro Pixel"           
     }
-
     #add new
 ]
 
