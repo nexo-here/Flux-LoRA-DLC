@@ -195,7 +195,7 @@ def flux_pipe_call_that_returns_an_iterable_of_images(
 loras = [
     #Super-Realism
     {
-        "image": "https://huggingface.co/strangerzonehf/Flux-Super-Realism-LoRA/resolve/main/images/2.png",
+        "image": "https://huggingface.co/strangerzonehf/Flux-Super-Realism-LoRA/resolve/main/images/1.png",
         "title": "Super Realism",
         "repo": "strangerzonehf/Flux-Super-Realism-LoRA",
         "weights": "super-realism.safetensors",
@@ -240,7 +240,7 @@ loras = [
     },
     #5
     {
-        "image": "https://huggingface.co/prithivMLmods/Canopus-LoRA-Flux-UltraRealism-2.0/resolve/main/images/3.png",
+        "image": "https://huggingface.co/prithivMLmods/Canopus-LoRA-Flux-UltraRealism-2.0/resolve/main/images/XX.png",
         "title": "Ultra Realism",
         "repo": "prithivMLmods/Canopus-LoRA-Flux-UltraRealism-2.0",
         "trigger_word": "Ultra realistic"
