@@ -191,8 +191,17 @@ def flux_pipe_call_that_returns_an_iterable_of_images(
     torch.cuda.empty_cache()
     yield self.image_processor.postprocess(image, output_type=output_type)[0]
 
-#-----------------------------------------------------------------------------------LoRA's--------------------------------------------------------------------------#
+#------------------------------------------------------------------------------------------------------------------------------------------------------------#
 loras = [
+    #Super-Realism
+    {
+        "image": "https://huggingface.co/strangerzonehf/Flux-Super-Realism-LoRA/resolve/main/images/2.png",
+        "title": "Super Realism",
+        "repo": "strangerzonehf/Flux-Super-Realism-LoRA",
+        "weights": "super-realism.safetensors",
+        "trigger_word": "Super Realism"            
+    },
+#-----------------------------------------------------------------------------------LoRA's----------------------------------------------------------------------#
     #0
     {
         "image": "https://huggingface.co/prithivMLmods/Purple-Dreamy-Flux-LoRA/resolve/main/images/PD3.png",
@@ -1524,7 +1533,32 @@ loras = [
         "repo": "prithivMLmods/Retro-Pixel-Flux-LoRA",
         "weights": "Retro-Pixel.safetensors",
         "trigger_word": "Retro Pixel"           
+    },
+    #171
+    {
+        "image": "https://huggingface.co/prithivMLmods/Teen-Outfit/resolve/main/images/TO2.png",
+        "title": "Teen Outfit",
+        "repo": "prithivMLmods/Teen-Outfit",
+        "weights": "Teen-Outfit.safetensors",
+        "trigger_word": "Teen Outfit"        
+    },
+    #172
+    {
+        "image": "https://huggingface.co/prithivMLmods/CAnime-LoRA/resolve/main/images/CA3.png",
+        "title": "CAnime",
+        "repo": "prithivMLmods/CAnime-LoRA",
+        "weights": "CAnime.safetensors",
+        "trigger_word": "CAnime"             
+    },
+    #173
+    {
+        "image": "https://huggingface.co/prithivMLmods/Super-Pencil-Flux-LoRA/resolve/main/images/SP1.png",
+        "title": "Simple Pencil",
+        "repo": "prithivMLmods/Super-Pencil-Flux-LoRA",
+        "weights": "Pencil.safetensors",
+        "trigger_word": "Simple Pencil"        
     }
+    
     #add new
 ]
 
