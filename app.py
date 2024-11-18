@@ -27,7 +27,7 @@ from huggingface_hub import (
 
 import spaces
 
-#---if env = local or colab---
+#---if workspace = local or colab---
 
 # Authenticate with Hugging Face
 # from huggingface_hub import login
@@ -200,6 +200,46 @@ loras = [
         "repo": "strangerzonehf/Flux-Super-Realism-LoRA",
         "weights": "super-realism.safetensors",
         "trigger_word": "Super Realism"            
+    },
+    #Dalle-Mix
+    {
+        "image": "https://huggingface.co/prithivMLmods/Flux-Dalle-Mix-LoRA/resolve/main/images/D3.png",
+        "title": "Dalle Mix",
+        "repo": "prithivMLmods/Flux-Dalle-Mix-LoRA",
+        "weights": "dalle-mix.safetensors",
+        "trigger_word": "dalle-mix"           
+    },
+    #Midjourney-mix
+    {
+        "image": "https://huggingface.co/strangerzonehf/Flux-Midjourney-Mix-LoRA/resolve/main/images/mj10.png",
+        "title": "Midjourney Mix",
+        "repo": "strangerzonehf/Flux-Midjourney-Mix-LoRA",
+        "weights": "midjourney-mix.safetensors",
+        "trigger_word": "midjourney mix"  
+    },
+    #anime-v1
+    {
+        "image": "https://huggingface.co/strangerzonehf/Flux-Animeo-v1-LoRA/resolve/main/images/A4.png",
+        "title": "Animeo Mix",
+        "repo": "strangerzonehf/Flux-Animeo-v1-LoRA",
+        "weights": "Animeo.safetensors",
+        "trigger_word": "Animeo"        
+    },
+    #anime-v2
+    {
+        "image": "https://huggingface.co/strangerzonehf/Flux-Animex-v2-LoRA/resolve/main/images/A33.png",
+        "title": "Animex Mix",
+        "repo": "strangerzonehf/Flux-Animex-v2-LoRA",
+        "weights": "Animex.safetensors",
+        "trigger_word": "Animex"         
+    },
+    #Super-Blend
+    {
+        "image": "https://huggingface.co/strangerzonehf/Flux-Super-Blend-LoRA/resolve/main/images/SB1.png",
+        "title": "Super Blend",
+        "repo": "strangerzonehf/Flux-Super-Blend-LoRA",
+        "weights": "Super-Blend.safetensors",
+        "trigger_word": "Super Blend"         
     },
 #-----------------------------------------------------------------------------------LoRA's----------------------------------------------------------------------#
     #0
@@ -1557,8 +1597,223 @@ loras = [
         "repo": "prithivMLmods/Super-Pencil-Flux-LoRA",
         "weights": "Pencil.safetensors",
         "trigger_word": "Simple Pencil"        
+    },
+    #174
+    {
+        "image": "https://huggingface.co/martintomov/retrofuturism-flux/resolve/main/images/2e40deba-858e-454f-ae1c-d1ba2adb6a65.jpeg",
+        "title": "Retro futurism",
+        "repo": "martintomov/retrofuturism-flux",
+        "weights": "retrofuturism_flux_lora_martintomov_v1.safetensors",
+        "trigger_word": "retrofuturism"             
+    },
+    #175
+    {
+        "image": "https://huggingface.co/Bootoshi/retroanime/resolve/main/images/9f21dffe-c4da-46c0-b0a6-e06257cf98d6.webp",
+        "title": "Retro Anime",
+        "repo": "Bootoshi/retroanime",
+        "weights": "RetroAnimeFluxV1.safetensors",
+        "trigger_word": "retro anime"   
+    },
+    #176
+    {
+        "image": "https://huggingface.co/alvdansen/plushy-world-flux/resolve/main/images/ComfyUI_00666_%20(1).png",
+        "title": "Plushy world",
+        "repo": "alvdansen/plushy-world-flux",
+        "weights": "plushy_world_flux_araminta_k.safetensors",
+        "trigger_word": "3dcndylnd style" 
+    },
+    #177
+    {
+        "image": "https://huggingface.co/renderartist/ROYGBIVFlux/resolve/main/images/ComfyUI_temp_qpxhm_00154_.png",
+        "title": "ROYGBIVFlux",
+        "repo": "renderartist/ROYGBIVFlux",
+        "weights": "ROYGBIV_Flux_v1_renderartist.safetensors",
+        "trigger_word": "r0ygb1v, digital illustration, textured"         
+    },
+    #178
+    {
+        "image": "https://huggingface.co/alvdansen/sonny-anime-flex/resolve/main/images/GLuFasaLyEoBaAUQMREVf_20b5cf5b178a404296978e360a9ac435.png",
+        "title": "sonny anime",
+        "repo": "alvdansen/sonny-anime-flex",
+        "weights": "araminta_k_sonnyanime_fluxd_flex.safetensors",
+        "trigger_word": "nm22 [style] style"            
+    },
+    #179
+    {
+        "image": "https://huggingface.co/bingbangboom/flux_whimscape/resolve/main/images/2.png",
+        "title": "flux whimscape",
+        "repo": "bingbangboom/flux_whimscape",
+        "weights": "WHMSCPE001.safetensors",
+        "trigger_word": "illustration in the style of WHMSCPE001"  
+    },
+    #180
+    {
+        "image": "https://huggingface.co/glif-loradex-trainer/AP123_movie_shots_ic_lora_experiment_v1/resolve/main/samples/1730923312010__000000500_1.jpg",
+        "title": "movie shots ic lora",
+        "repo": "glif-loradex-trainer/AP123_movie_shots_ic_lora_experiment_v1",
+        "weights": "movie_shots_ic_lora_experiment_v1.safetensors",
+        "trigger_word": "MOVIE-SHOTS"        
+    },
+    #181
+    {
+        "image": "https://huggingface.co/glif/LiDAR-Vision/resolve/main/images/f8f1995e-c583-425b-b73a-f3e873ce1005.png",
+        "title": "LiDAR",
+        "repo": "glif/LiDAR-Vision",
+        "weights": "Lidar.safetensors",
+        "trigger_word": "L1d4r"        
+    },
+    #182
+    {
+        "image": "https://huggingface.co/prithivMLmods/Canopus-Flux-LoRA-Hoodies/resolve/main/images/XXX.png",
+        "title": "Hoodies",
+        "repo": "prithivMLmods/Canopus-Flux-LoRA-Hoodies",
+        "weights": "Canopus-Flux-LoRA-Hoodies.safetensors",
+        "trigger_word": "Hoodie"          
+    },
+    #183
+    {
+        "image": "https://huggingface.co/dvyio/flux-lora-rdr2/resolve/main/images/RTqPoC9s0M1wNhago27OV_dda06f47ee764202aa5e55efa923b94e.jpg",
+        "title": "World of RDR",
+        "repo": "dvyio/flux-lora-rdr2",
+        "weights": "eb79a593332f40458ea36fe0782f01a4_pytorch_lora_weights.safetensors",
+        "trigger_word": "in the style of RDRGM"           
+    },
+    #184
+    {
+        "image": "https://huggingface.co/Fihade/Retro-Collage-Art-Flux-Dev/resolve/main/images/005.jpeg",
+        "title": "Retro Collage Art",
+        "repo": "Fihade/Retro-Collage-Art-Flux-Dev",
+        "weights": "flux_dev_ff_collage_artstyle.safetensors",
+        "trigger_word": "ff-collage"         
+    },
+    #185
+    {
+        "image": "https://huggingface.co/prithivMLmods/Flux.1-Dev-Quote-LoRA/resolve/main/images/QQ2.png",
+        "title": "Quote",
+        "repo": "prithivMLmods/Flux.1-Dev-Quote-LoRA",
+        "weights": "quoter001.safetensors",
+        "trigger_word": "quoter" 
+    },
+    #186
+    {
+        "image": "https://huggingface.co/prithivMLmods/Flux.1-Dev-Stamp-Art-LoRA/resolve/main/images/SS2.png",
+        "title": "Stamp",
+        "repo": "prithivMLmods/Flux.1-Dev-Stamp-Art-LoRA",
+        "weights": "stam9.safetensors",
+        "trigger_word": "stam9"         
+    },
+    #187
+    {
+        "image": "https://huggingface.co/prithivMLmods/Flux.1-Dev-Hand-Sticky-LoRA/resolve/main/images/H3.png",
+        "title": "Hand Sticky",
+        "repo": "prithivMLmods/Flux.1-Dev-Hand-Sticky-LoRA",
+        "weights": "handstick69.safetensors",
+        "trigger_word": "handstick69"        
+    },
+    #188
+    {
+        "image": "https://huggingface.co/prithivMLmods/Flux.1-Dev-Poster-HQ-LoRA/resolve/main/images/PP2.png",
+        "title": "Poster Foss",
+        "repo": "prithivMLmods/Flux.1-Dev-Poster-HQ-LoRA",
+        "weights": "poster-foss.safetensors",
+        "trigger_word": "poster foss"          
+    },
+    #189
+    {
+        "image": "https://huggingface.co/prithivMLmods/Flux.1-Dev-Ctoon-LoRA/resolve/main/images/C3.png",
+        "title": "Ctoon",
+        "repo": "prithivMLmods/Flux.1-Dev-Ctoon-LoRA",
+        "weights": "ctoon.safetensors",
+        "trigger_word": "ctoon"         
+    },
+    #190
+    {
+        "image": "https://huggingface.co/glif-loradex-trainer/_wezz_flux_dev_4li3nfur/resolve/main/samples/1726702721424__000003000_3.jpg",
+        "title": "4li3nfur",
+        "repo": "glif-loradex-trainer/_wezz_flux_dev_4li3nfur",
+        "weights": "flux_dev_4li3nfur.safetensors",
+        "trigger_word": "4li3nfur"          
+    },
+    #191
+    {
+        "image": "https://huggingface.co/prithivMLmods/Flux.1-Dev-Indo-Realism-LoRA/resolve/main/images/333.png",
+        "title": "Indo Realism",
+        "repo": "prithivMLmods/Flux.1-Dev-Indo-Realism-LoRA",
+        "weights": "indo-realism.safetensors",
+        "trigger_word": "indo-realism"        
+    },
+    #192
+    {
+        "image": "https://huggingface.co/prithivMLmods/Flux.1-Dev-Sketch-Card-LoRA/resolve/main/images/SC2.png",
+        "title": "Sketch Card",
+        "repo": "prithivMLmods/Flux.1-Dev-Sketch-Card-LoRA",
+        "weights": "sketchcard.safetensors",
+        "trigger_word": "sketch card"            
+    },
+    #193
+    {
+        "image": "https://huggingface.co/prithivMLmods/Flux.1-Dev-Movie-Boards-LoRA/resolve/main/images/MB1.png",
+        "title": "Movie Board",
+        "repo": "prithivMLmods/Flux.1-Dev-Movie-Boards-LoRA",
+        "weights": "movieboard.safetensors",
+        "trigger_word": "movieboard"        
+    },
+    #194
+    {
+        "image": "https://huggingface.co/prithivMLmods/Flux.1-Dev-Pov-DoorEye-LoRA/resolve/main/images/L4.png",
+        "title": "Door Eye View",
+        "repo": "prithivMLmods/Flux.1-Dev-Pov-DoorEye-LoRA",
+        "weights": "look-in-2.safetensors",
+        "trigger_word": "look in 2"         
+    },
+    #195
+    {
+        "image": "https://huggingface.co/alvdansen/enna-sketch-style/resolve/main/images/out-0%20(23).webp",
+        "title": "Enna Sketch",
+        "repo": "alvdansen/enna-sketch-style",
+        "weights": "enna_sketch_style_araminta_k.safetensors",
+        "trigger_word": "sketch illustration style"           
+    },
+    #196
+    {
+        "image": "https://huggingface.co/jbilcke-hf/flux-dev-panorama-lora-2/resolve/main/samples/HDRI%20panoramic%20view%20of%20TOK%2C%20visiting%20an%20amusement%20park%20about%20harry%20potter.webp",
+        "title": "Panorama",
+        "repo": "jbilcke-hf/flux-dev-panorama-lora-2",
+        "weights": "flux_train_replicate.safetensors",
+        "trigger_word": "HDRI panoramic view of TOK"         
+    },
+    #197
+    {
+        "image": "https://huggingface.co/Shakker-Labs/FLUX.1-dev-LoRA-Micro-landscape-on-Mobile-Phone/resolve/main/images/a29b8763a8f733dea09c1ab07a42263ef6e304cb81be3f5c97fbf8f6.jpg",
+        "title": "Micro Landscape",
+        "repo": "Shakker-Labs/FLUX.1-dev-LoRA-Micro-landscape-on-Mobile-Phone",
+        "weights": "FLUX-dev-lora-micro-landscape.safetensors",
+        "trigger_word": "miniature stereoscopic scene"           
+    },
+    #198
+    {
+        "image": "https://huggingface.co/glif-loradex-trainer/goldenark__Ancient_Greece_Watercolor_Sketch_Style/resolve/main/samples/1727152322975__000002000_0.jpg",
+        "title": "Ancient Greece Watercolor",
+        "repo": "glif-loradex-trainer/goldenark__Ancient_Greece_Watercolor_Sketch_Style",
+        "weights": "Ancient_Greece_Watercolor_Sketch_Style.safetensors",
+        "trigger_word": "AncientWaterColorStyle"          
+    },
+    #199
+    {
+        "image": "https://huggingface.co/glif-loradex-trainer/i12bp8_appelsiensam_mii_v1/resolve/main/samples/1731918886531__000003000_0.jpg",
+        "title": "M11 PPLSNSM",
+        "repo": "glif-loradex-trainer/i12bp8_appelsiensam_mii_v1",
+        "weights": "appelsiensam_mii_v1.safetensors",
+        "trigger_word": "M11_PPLSNSM"         
+    },
+    #200
+    {
+        "image": "https://huggingface.co/glif-loradex-trainer/an303042_RisographPrint_v1/resolve/main/samples/1731852835625__000003000_5.jpg",
+        "title": "RisographPrint",
+        "repo": "glif-loradex-trainer/an303042_RisographPrint_v1",
+        "weights": "RisographPrint_v1.safetensors",
+        "trigger_word": "rsgrf , risograph"          
     }
-    
     #add new
 ]
 
