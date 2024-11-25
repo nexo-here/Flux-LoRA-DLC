@@ -11,6 +11,7 @@ import torch
 from PIL import Image
 import gradio as gr
 
+
 from diffusers import (
     DiffusionPipeline,
     AutoencoderTiny,
@@ -24,6 +25,8 @@ from huggingface_hub import (
     HfFileSystem,
     ModelCard,
     snapshot_download)
+
+from diffusers.utils import load_image
 
 import spaces
 
@@ -209,14 +212,6 @@ loras = [
         "weights": "dalle-mix.safetensors",
         "trigger_word": "dalle-mix"           
     },
-    #Midjourney-mix
-    {
-        "image": "https://huggingface.co/strangerzonehf/Flux-Midjourney-Mix-LoRA/resolve/main/images/mj10.png",
-        "title": "Midjourney Mix",
-        "repo": "strangerzonehf/Flux-Midjourney-Mix-LoRA",
-        "weights": "midjourney-mix.safetensors",
-        "trigger_word": "midjourney mix"  
-    },
     #anime-v1
     {
         "image": "https://huggingface.co/strangerzonehf/Flux-Animeo-v1-LoRA/resolve/main/images/A4.png",
@@ -240,6 +235,35 @@ loras = [
         "repo": "strangerzonehf/Flux-Super-Blend-LoRA",
         "weights": "Super-Blend.safetensors",
         "trigger_word": "Super Blend"         
+    },
+    {
+        "image": "https://huggingface.co/prithivMLmods/Flux-Long-Toon-LoRA/resolve/main/images/LT5.png",
+        "title": "Long Toons",
+        "repo": "prithivMLmods/Flux-Long-Toon-LoRA",
+        "weights": "Long-Toon.safetensors",
+        "trigger_word": "Long toons"         
+    },
+    {
+        "image": "https://huggingface.co/strangerzonehf/Flux-Isometric-3D-Cinematography/resolve/main/images/IS1.png",
+        "title": "Isometric 3D Cinematography",
+        "repo": "strangerzonehf/Flux-Isometric-3D-Cinematography",
+        "weights": "Isometric-3D-Cinematography.safetensors",
+        "trigger_word": "Isometric 3D Cinematography"         
+    },
+    {
+        "image": "https://huggingface.co/strangerzonehf/Flux-Cute-3D-Kawaii-LoRA/resolve/main/images/CK3.png",
+        "title": "Cute 3D Kawaii",
+        "repo": "strangerzonehf/Flux-Cute-3D-Kawaii-LoRA",
+        "weights": "Cute-3d-Kawaii.safetensors",
+        "trigger_word": "Cute 3d Kawaii"        
+    },
+    
+    {
+        "image": "https://huggingface.co/strangerzonehf/Flux-Isometric-3D-LoRA/resolve/main/images/ID2.png",
+        "title": "Isometric 3D",
+        "repo": "strangerzonehf/Flux-Isometric-3D-LoRA",
+        "weights": "Isometric-3D.safetensors",
+        "trigger_word": "Isometric 3D" 
     },
 #-----------------------------------------------------------------------------------LoRA's----------------------------------------------------------------------#
     #0
@@ -1813,6 +1837,177 @@ loras = [
         "repo": "glif-loradex-trainer/an303042_RisographPrint_v1",
         "weights": "RisographPrint_v1.safetensors",
         "trigger_word": "rsgrf , risograph"          
+    },
+    #201
+    {
+        "image": "https://huggingface.co/gokaygokay/Flux-White-Background-LoRA/resolve/main/images/example_mtojzmerf.png",
+        "title": "White Background",
+        "repo": "gokaygokay/Flux-White-Background-LoRA",
+        "weights": "80cfbf52faf541d49c6abfe1ac571112_lora.safetensors",
+        "trigger_word": "in the middle ,white background"        
+    },
+    #202
+    {
+        "image": "https://huggingface.co/glif/Gesture-Draw/resolve/main/images/cf8697fb-d6b4-4684-8a1d-82beb9d266ed.jpg",
+        "title": "Gesture Draw",
+        "repo": "glif/Gesture-Draw",
+        "weights": "Gesture_Draw_v1.safetensors",
+        "trigger_word": "gstdrw style"         
+    },
+    #203
+    {
+        "image": "https://huggingface.co/MuninStudio/FLUX.1-dev-LoRA-Hard-Flash/resolve/main/images/02.jpg",
+        "title": "Hard Flash",
+        "repo": "MuninStudio/FLUX.1-dev-LoRA-Hard-Flash",
+        "weights": "HRDFLS.safetensors",
+        "trigger_word": "HRDFLS"          
+    },
+    #204
+    {
+        "image": "https://huggingface.co/dvyio/flux-lora-the-sims/resolve/main/images/dunBAVBsALOepaE_dsWFI_6b0fef6b0fc4472aa07d00edea7c75b3.jpg",
+        "title": "SIMS",
+        "repo": "dvyio/flux-lora-the-sims",
+        "weights": "011ed14848b3408c8d70d3ecfa14f122_lora.safetensors",
+        "trigger_word": "video game screenshot in the style of THSMS"        
+    },
+    #205
+    {
+        "image": "https://huggingface.co/UmeAiRT/FLUX.1-dev-LoRA-Ume_Sky/resolve/main/images/flux_00171_.png",
+        "title": "Umesky",
+        "repo": "UmeAiRT/FLUX.1-dev-LoRA-Ume_Sky",
+        "weights": "ume_sky_v2.safetensors",
+        "trigger_word": "umesky"          
+    },
+    #206
+    {
+        "image": "https://huggingface.co/prithivMLmods/Flux.1-Dev-Realtime-Toon-Mix/resolve/main/images/T1.png",
+        "title": "Realtime Toon Mix",
+        "repo": "prithivMLmods/Flux.1-Dev-Realtime-Toon-Mix",
+        "weights": "toon-mix.safetensors",
+        "trigger_word": "toon mix"           
+    },
+    #207
+    {
+        "image": "https://huggingface.co/oshtz/flux-pointcrayonstyle/resolve/main/images/pointcrayonstyle%20illustration%2C%20at%20a%20lighthouse%2C%20the%20ambiance%20is%20exotic%20and%20mysterious.png",
+        "title": "Pointcrayonstyle",
+        "repo": "oshtz/flux-pointcrayonstyle",
+        "weights": "flux-pointcrayonstyle.safetensors",
+        "trigger_word": "pointcrayonstyle"              
+    },
+    #208
+    {
+        "image": "https://huggingface.co/Purz/vhs-box/resolve/main/33727059.jpeg",
+        "title": "VSH Box",
+        "repo": "Purz/vhs-box",
+        "weights": "purz-vhs_box.safetensors",
+        "trigger_word": "vhs_box"          
+    },
+    #209
+    {
+        "image": "https://huggingface.co/nerijs/flux_prettyshot_v1/resolve/main/images/image_5.png",
+        "title": "Prettyshot",
+        "repo": "nerijs/flux_prettyshot_v1",
+        "weights": "flux_prettyshot_v1.safetensors",
+        "trigger_word": "pr3ttysh0t"         
+    },
+    #210
+    {
+        "image": "https://huggingface.co/glif-loradex-trainer/insectagon_pipo_hippo1/resolve/main/samples/1729839793051__000001500_1.jpg",
+        "title": "Insectagon pipo",
+        "repo": "glif-loradex-trainer/insectagon_pipo_hippo1",
+        "weights": "pipo_hippo1.safetensors",
+        "trigger_word": "pipo_meme"          
+    },
+    
+    #----------------------------------------------------------Phase2-----------------------------------------------------------------------#
+
+    #211
+    {
+        "image": "https://huggingface.co/prithivMLmods/Flux-Polaroid-Plus/resolve/main/images/P1.png",
+        "title": "Polaroid Plus",
+        "repo": "prithivMLmods/Flux-Polaroid-Plus",
+        "weights": "polaroid-plus.safetensors",
+        "trigger_word": "Polaroid Collage"          
+    },
+    #212
+    {
+        "image": "https://huggingface.co/prithivMLmods/Flux-Product-Ad-Backdrop/resolve/main/images/PA1.png",
+        "title": "Product Ad",
+        "repo": "prithivMLmods/Flux-Product-Ad-Backdrop",
+        "weights": "Prod-Ad.safetensors",
+        "trigger_word": "Product Ad"         
+    },
+    #213
+    {
+        "image": "https://huggingface.co/prithivMLmods/Flux-Art-Nightmare-99/resolve/main/images/NM4.png",
+        "title": "Nightmare 99",
+        "repo": "prithivMLmods/Flux-Art-Nightmare-99",
+        "weights": "nm99.safetensors",
+        "trigger_word": "nm99"         
+    },
+    #214
+    {
+        "image": "https://huggingface.co/prithivMLmods/Flux.1-Dev-Frosted-Container-LoRA/resolve/main/images/FG1.png",
+        "title": "Frosted Container",
+        "repo": "prithivMLmods/Flux.1-Dev-Frosted-Container-LoRA",
+        "weights": "frosted-gc.safetensors",
+        "trigger_word": "frosted GC"          
+    },
+    #215
+    {
+        "image": "https://huggingface.co/glif-loradex-trainer/swap_magenta_kuki_roblox/resolve/main/samples/1731068408259__000001500_4.jpg",
+        "title": "Magenta Kuki Roblox",
+        "repo": "glif-loradex-trainer/swap_magenta_kuki_roblox",
+        "weights": "magenta_kuki_roblox.safetensors",
+        "trigger_word": "kuki_magenta, roblox"         
+    },
+    #216
+    {
+        "image": "https://huggingface.co/glif-loradex-trainer/maxxd4240_PleinAir/resolve/main/samples/1730493095161__000003000_4.jpg",
+        "title": "Plein Air",
+        "repo": "glif-loradex-trainer/maxxd4240_PleinAir",
+        "weights": "PleinAir.safetensors",
+        "trigger_word": "P1e!n"           
+    },
+    #217
+    {
+        "image": "https://huggingface.co/prithivMLmods/Flux-GArt-LoRA/resolve/main/images/G2.png",
+        "title": "GArt",
+        "repo": "prithivMLmods/Flux-GArt-LoRA",
+        "weights": "GArt.safetensors",
+        "trigger_word": "GArt"         
+    },
+    #218
+    {
+        "image": "https://huggingface.co/strangerzonehf/Flux-Super-Capybara-HF/resolve/main/images/C2.png",
+        "title": "Capybara HF",
+        "repo": "strangerzonehf/Flux-Super-Capybara-HF",
+        "weights": "capybara-hf.safetensors",
+        "trigger_word": "capybara hf"        
+    },
+    #219
+    {
+        "image": "https://huggingface.co/prithivMLmods/Flux-Fine-Detail-LoRA/resolve/main/images/SR1.png",
+        "title": "Fine Detail",
+        "repo": "prithivMLmods/Flux-Fine-Detail-LoRA",
+        "weights": "Fine-Detail.safetensors",
+        "trigger_word": "Super Detail"          
+    },
+    #220
+    {
+        "image": "https://huggingface.co/gokaygokay/Flux-Digital-Backgrounds-LoRA/resolve/main/images/image1.jpg",
+        "title": "Digital Backgrounds",
+        "repo": "gokaygokay/Flux-Digital-Backgrounds-LoRA",
+        "weights": "digital_background_lora.safetensors",
+        "trigger_word": "dgtlbg"         
+    },
+    #221
+    {
+        "image": "https://huggingface.co/gokaygokay/Flux-Realistic-Backgrounds-LoRA/resolve/main/images/image1.jpg",
+        "title": "Realistic Backgrounds",
+        "repo": "gokaygokay/Flux-Realistic-Backgrounds-LoRA",
+        "weights": "realistic_background_lora.safetensors",
+        "trigger_word": "rlstcbg"         
     }
     #add new
 ]
