@@ -228,6 +228,14 @@ loras = [
         "weights": "Animex.safetensors",
         "trigger_word": "Animex"         
     },
+    #Mixer2.0
+    {
+        "image": "https://huggingface.co/strangerzonehf/Flux-Midjourney-Mix2-LoRA/resolve/main/images/3.png",
+        "title": "Midjourney Mix 2",
+        "repo": "strangerzonehf/Flux-Midjourney-Mix2-LoRA",
+        "weights": "mjV6.safetensors",
+        "trigger_word": "MJ v6"        
+    },
     #Super-Blend
     {
         "image": "https://huggingface.co/strangerzonehf/Flux-Super-Blend-LoRA/resolve/main/images/SB1.png",
@@ -264,6 +272,28 @@ loras = [
         "repo": "strangerzonehf/Flux-Isometric-3D-LoRA",
         "weights": "Isometric-3D.safetensors",
         "trigger_word": "Isometric 3D" 
+    },
+    {
+        "image": "https://huggingface.co/prithivMLmods/Flux-Toonic-2.5D-LoRA/resolve/main/images/T2.png",
+        "title": "Toon 2.5D",
+        "repo": "prithivMLmods/Flux-Toonic-2.5D-LoRA",
+        "weights": "toonic2.5D.safetensors",
+        "trigger_word": "toonic 2.5D"         
+    },
+    {
+        "image": "https://huggingface.co/strangerzonehf/Flux-YWL-Realism-LoRA/resolve/main/images/R3.png",
+        "title": "YWL Realism",
+        "repo": "strangerzonehf/Flux-YWL-Realism-LoRA",
+        "weights": "ywl-realism.safetensors",
+        "trigger_word": "ylw realism"          
+    },
+    #chill-guy
+    {
+        "image": "https://huggingface.co/prithivMLmods/Flux-Chill-Guy-Zone/resolve/main/images/8.png",
+        "title": "Chill Guy",
+        "repo": "prithivMLmods/Flux-Chill-Guy-Zone",
+        "weights": "chill-guy.safetensors",
+        "trigger_word": "chill guy"           
     },
 #-----------------------------------------------------------------------------------LoRA's----------------------------------------------------------------------#
     #0
@@ -2008,6 +2038,51 @@ loras = [
         "repo": "gokaygokay/Flux-Realistic-Backgrounds-LoRA",
         "weights": "realistic_background_lora.safetensors",
         "trigger_word": "rlstcbg"         
+    },
+    #222
+    {
+        "image": "https://huggingface.co/prithivMLmods/F-Meme/resolve/main/images/M3.png",
+        "title": "Flux Meme",
+        "repo": "prithivMLmods/Flux-Meme-Xd-LoRA",
+        "weights": "meme.safetensors",
+        "trigger_word": "meme"          
+    },
+    #3DXL
+    {
+        "image": "https://huggingface.co/strangerzonehf/Flux-3DXL-Partfile-0001/resolve/main/images/4.png",
+        "title": "3DXLP1",
+        "repo": "strangerzonehf/Flux-3DXL-Partfile-0001",
+        "weights": "3DXLP1.safetensors",
+        "trigger_word": "3DXLP1"          
+    },
+    {
+        "image": "https://huggingface.co/strangerzonehf/Flux-3DXL-Partfile-0002/resolve/main/images/44.png",
+        "title": "3DXLP2",
+        "repo": "strangerzonehf/Flux-3DXL-Partfile-0002",
+        "weights": "3DXLP2.safetensors",
+        "trigger_word": "3DXLP2"         
+    },
+    {
+        "image": "https://huggingface.co/strangerzonehf/Flux-3DXL-Partfile-0003/resolve/main/images/222.png",
+        "title": "3DXLP3",
+        "repo": "strangerzonehf/Flux-3DXL-Partfile-0003",
+        "weights": "3DXLP3.safetensors",
+        "trigger_word": "3DXLP3"           
+    },
+    {
+        "image": "https://huggingface.co/strangerzonehf/Flux-3DXL-Partfile-0004/resolve/main/images/3333.png",
+        "title": "3DXLP4",
+        "repo": "strangerzonehf/Flux-3DXL-Partfile-0004",
+        "weights": "3DXLP4.safetensors",
+        "trigger_word": "3DXLP4"         
+    },
+    #227
+    {
+        "image": "https://huggingface.co/strangerzonehf/Flux-3DXL-Partfile-C0001/resolve/main/images/C3.png",
+        "title": "3DXLC1",
+        "repo": "strangerzonehf/Flux-3DXL-Partfile-C0001",
+        "weights": "3DXLC1.safetensors",
+        "trigger_word": "3DXLC1"         
     }
     #add new
 ]
