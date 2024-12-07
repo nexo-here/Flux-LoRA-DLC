@@ -39,7 +39,6 @@ import spaces
 # hf_token = 'hf-token-authentication'
 # login(hf_token)
 
-
 def calculate_shift(
     image_seq_len,
     base_seq_len: int = 256,
@@ -228,13 +227,13 @@ loras = [
         "weights": "Animex.safetensors",
         "trigger_word": "Animex"         
     },
-    #Mixer2.0
+    #Super Portrait
     {
-        "image": "https://huggingface.co/strangerzonehf/Flux-Midjourney-Mix2-LoRA/resolve/main/images/3.png",
-        "title": "Midjourney Mix 2",
-        "repo": "strangerzonehf/Flux-Midjourney-Mix2-LoRA",
-        "weights": "mjV6.safetensors",
-        "trigger_word": "MJ v6"        
+        "image": "https://huggingface.co/strangerzonehf/Flux-Super-Portrait-LoRA/resolve/main/images/3.png",
+        "title": "Super Portraits",
+        "repo": "strangerzonehf/Flux-Super-Portrait-LoRA",
+        "weights": "Super-Portrait.safetensors",
+        "trigger_word": "Super Portrait"       
     },
     #Super-Blend
     {
@@ -243,6 +242,22 @@ loras = [
         "repo": "strangerzonehf/Flux-Super-Blend-LoRA",
         "weights": "Super-Blend.safetensors",
         "trigger_word": "Super Blend"         
+    },
+    #3DXL P@1
+    {
+        "image": "https://huggingface.co/strangerzonehf/Flux-3DXL-Partfile-0001/resolve/main/images/4.png",
+        "title": "3DXLP1",
+        "repo": "strangerzonehf/Flux-3DXL-Partfile-0001",
+        "weights": "3DXLP1.safetensors",
+        "trigger_word": "3DXLP1"          
+    },
+    #Mixer2.0
+    {
+        "image": "https://huggingface.co/strangerzonehf/Flux-Midjourney-Mix2-LoRA/resolve/main/images/3.png",
+        "title": "Midjourney Mix 2",
+        "repo": "strangerzonehf/Flux-Midjourney-Mix2-LoRA",
+        "weights": "mjV6.safetensors",
+        "trigger_word": "MJ v6"        
     },
     {
         "image": "https://huggingface.co/prithivMLmods/Flux-Long-Toon-LoRA/resolve/main/images/LT5.png",
@@ -294,6 +309,20 @@ loras = [
         "repo": "prithivMLmods/Flux-Chill-Guy-Zone",
         "weights": "chill-guy.safetensors",
         "trigger_word": "chill guy"           
+    },
+    {
+        "image": "https://huggingface.co/p1atdev/flux.1-schnell-pvc-style-lora/resolve/main/images/flux_lora_00221_.png",
+        "title": "Anime PVC Style",
+        "repo": "p1atdev/flux.1-schnell-pvc-style-lora",
+        "weights": "pvc-shnell-7250+7500.safetensors",
+        "trigger_word": "pvc figure, nendoroid, figma"         
+    },
+    {
+        "image": "https://huggingface.co/strangerzonehf/Flux-C4C-Design-LoRA/resolve/main/images/4.png",
+        "title": "Smiley C4C",
+        "repo": "strangerzonehf/Flux-C4C-Design-LoRA",
+        "weights": "Smiley-C4C.safetensors",
+        "trigger_word": "Smiley C4C"         
     },
 #-----------------------------------------------------------------------------------LoRA's----------------------------------------------------------------------#
     #0
@@ -685,11 +714,11 @@ loras = [
     },
     #53
     {
-        "image": "https://huggingface.co/multimodalart/vintage-ads-flux/resolve/main/samples/-FMpgla6rQ1hBwBpbr-Ao_da7b23c29de14a9cad94901879ae2e2b.png",
-        "title": "Vintage Ads Flux",
-        "repo": "multimodalart/vintage-ads-flux",
-        "weights": "vintage-ads-flux-1350.safetensors",
-        "trigger_word": "a vintage ad of" 
+        "image": "https://huggingface.co/strangerzonehf/Flux-NTFv4-Designs-LoRA/resolve/main/images/6.png",
+        "title": "NFT V4",
+        "repo": "strangerzonehf/Flux-NTFv4-Designs-LoRA",
+        "weights": "NFTv4.safetensors",
+        "trigger_word": "NFT V4" 
     },
     #54
     {
@@ -927,11 +956,11 @@ loras = [
     },
     #83
     {
-        "image": "https://huggingface.co/davidrd123/Flux-MoonLanding76-Replicate/resolve/main/images/example_6adktoq5m.png",
-        "title": "MoonLanding 76",
-        "repo": "davidrd123/Flux-MoonLanding76-Replicate",
-        "weights": "lora.safetensors",
-        "trigger_word": "m00nl4nd1ng"          
+        "image": "https://huggingface.co/strangerzonehf/Flux-3DXL-Partfile-C0001/resolve/main/images/C3.png",
+        "title": "3DXLC1",
+        "repo": "strangerzonehf/Flux-3DXL-Partfile-C0001",
+        "weights": "3DXLC1.safetensors",
+        "trigger_word": "3DXLC1"             
     },
     #84
     {
@@ -1782,11 +1811,11 @@ loras = [
     },
     #190
     {
-        "image": "https://huggingface.co/glif-loradex-trainer/_wezz_flux_dev_4li3nfur/resolve/main/samples/1726702721424__000003000_3.jpg",
-        "title": "4li3nfur",
-        "repo": "glif-loradex-trainer/_wezz_flux_dev_4li3nfur",
-        "weights": "flux_dev_4li3nfur.safetensors",
-        "trigger_word": "4li3nfur"          
+        "image": "https://huggingface.co/prithivMLmods/Flux-C33-Design-LoRA/resolve/main/images/3.png",
+        "title": "C33 Design",
+        "repo": "prithivMLmods/Flux-C33-Design-LoRA",
+        "weights": "C33.safetensors",
+        "trigger_word": "C33 Design"           
     },
     #191
     {
@@ -1948,9 +1977,6 @@ loras = [
         "weights": "pipo_hippo1.safetensors",
         "trigger_word": "pipo_meme"          
     },
-    
-    #----------------------------------------------------------Phase2-----------------------------------------------------------------------#
-
     #211
     {
         "image": "https://huggingface.co/prithivMLmods/Flux-Polaroid-Plus/resolve/main/images/P1.png",
@@ -2041,20 +2067,13 @@ loras = [
     },
     #222
     {
-        "image": "https://huggingface.co/prithivMLmods/F-Meme/resolve/main/images/M3.png",
-        "title": "Flux Meme",
-        "repo": "prithivMLmods/Flux-Meme-Xd-LoRA",
-        "weights": "meme.safetensors",
-        "trigger_word": "meme"          
+        "image": "https://huggingface.co/prithivMLmods/Flux-Lego-Ref-LoRA/resolve/main/images/2.png",
+        "title": "LEGO",
+        "repo": "prithivMLmods/Flux-Lego-Ref-LoRA",
+        "weights": "Lego.safetensors",
+        "trigger_word": "lego --fref --89890"          
     },
-    #3DXL
-    {
-        "image": "https://huggingface.co/strangerzonehf/Flux-3DXL-Partfile-0001/resolve/main/images/4.png",
-        "title": "3DXLP1",
-        "repo": "strangerzonehf/Flux-3DXL-Partfile-0001",
-        "weights": "3DXLP1.safetensors",
-        "trigger_word": "3DXLP1"          
-    },
+    #223
     {
         "image": "https://huggingface.co/strangerzonehf/Flux-3DXL-Partfile-0002/resolve/main/images/44.png",
         "title": "3DXLP2",
@@ -2062,28 +2081,15 @@ loras = [
         "weights": "3DXLP2.safetensors",
         "trigger_word": "3DXLP2"         
     },
-    {
-        "image": "https://huggingface.co/strangerzonehf/Flux-3DXL-Partfile-0003/resolve/main/images/222.png",
-        "title": "3DXLP3",
-        "repo": "strangerzonehf/Flux-3DXL-Partfile-0003",
-        "weights": "3DXLP3.safetensors",
-        "trigger_word": "3DXLP3"           
-    },
+    #224
     {
         "image": "https://huggingface.co/strangerzonehf/Flux-3DXL-Partfile-0004/resolve/main/images/3333.png",
         "title": "3DXLP4",
         "repo": "strangerzonehf/Flux-3DXL-Partfile-0004",
         "weights": "3DXLP4.safetensors",
         "trigger_word": "3DXLP4"         
-    },
-    #227
-    {
-        "image": "https://huggingface.co/strangerzonehf/Flux-3DXL-Partfile-C0001/resolve/main/images/C3.png",
-        "title": "3DXLC1",
-        "repo": "strangerzonehf/Flux-3DXL-Partfile-C0001",
-        "weights": "3DXLC1.safetensors",
-        "trigger_word": "3DXLC1"         
     }
+    
     #add new
 ]
 
