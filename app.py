@@ -211,6 +211,14 @@ loras = [
         "weights": "dalle-mix.safetensors",
         "trigger_word": "dalle-mix"           
     },
+    #smudge
+    {
+        "image": "https://huggingface.co/strangerzonehf/Flux-Sketch-Smudge-LoRA/resolve/main/images/5.png",
+        "title": "Sketch_Smudge",
+        "repo": "strangerzonehf/Flux-Sketch-Smudge-LoRA",
+        "weights": "Sketch-Smudge.safetensors",
+        "trigger_word": " Sketch Smudge"         
+    },
     #anime-v1
     {
         "image": "https://huggingface.co/strangerzonehf/Flux-Animeo-v1-LoRA/resolve/main/images/A4.png",
@@ -259,19 +267,20 @@ loras = [
         "weights": "mjV6.safetensors",
         "trigger_word": "MJ v6"        
     },
+    #Datou1111/shou_xin
+    {
+        "image": "https://huggingface.co/strangerzonehf/Flux-Ultimate-LoRA-Collection/resolve/main/images/example_aqz3dv60n.jpeg",
+        "title": "SHOU_XIN",
+        "repo": "Datou1111/shou_xin",
+        "weights": "shou_xin.safetensors",
+        "trigger_word": "shou_xin, pencil sketch"           
+    },
     {
         "image": "https://huggingface.co/prithivMLmods/Flux-Long-Toon-LoRA/resolve/main/images/LT5.png",
         "title": "Long Toons",
         "repo": "prithivMLmods/Flux-Long-Toon-LoRA",
         "weights": "Long-Toon.safetensors",
         "trigger_word": "Long toons"         
-    },
-    {
-        "image": "https://huggingface.co/strangerzonehf/Flux-Isometric-3D-Cinematography/resolve/main/images/IS1.png",
-        "title": "Isometric 3D Cinematography",
-        "repo": "strangerzonehf/Flux-Isometric-3D-Cinematography",
-        "weights": "Isometric-3D-Cinematography.safetensors",
-        "trigger_word": "Isometric 3D Cinematography"         
     },
     {
         "image": "https://huggingface.co/strangerzonehf/Flux-Cute-3D-Kawaii-LoRA/resolve/main/images/CK3.png",
@@ -716,7 +725,7 @@ loras = [
     {
         "image": "https://huggingface.co/strangerzonehf/Flux-NTFv4-Designs-LoRA/resolve/main/images/6.png",
         "title": "NFT V4",
-        "repo": "strangerzonehf/Flux-NTFv4-Designs-LoRA",
+        "repo": "strangerzonehf/Flux-NFTv4-Designs-LoRA",
         "weights": "NFTv4.safetensors",
         "trigger_word": "NFT V4" 
     },
@@ -2081,14 +2090,6 @@ loras = [
         "weights": "3DXLP2.safetensors",
         "trigger_word": "3DXLP2"         
     },
-    #224
-    {
-        "image": "https://huggingface.co/strangerzonehf/Flux-3DXL-Partfile-0004/resolve/main/images/3333.png",
-        "title": "3DXLP4",
-        "repo": "strangerzonehf/Flux-3DXL-Partfile-0004",
-        "weights": "3DXLP4.safetensors",
-        "trigger_word": "3DXLP4"         
-    }
     
     #add new
 ]
@@ -2348,7 +2349,7 @@ css = '''
 .progress-bar {height: 100%;background-color: #4f46e5;width: calc(var(--current) / var(--total) * 100%);transition: width 0.5s ease-in-out}
 '''
 
-with gr.Blocks(theme="prithivMLmods/Minecraft-Theme", css=css, delete_cache=(60, 60)) as app:
+with gr.Blocks(theme="YTheme/Minecraft", css=css, delete_cache=(60, 60)) as app:
     title = gr.HTML(
         """<h1>FLUX LoRA DLC🥳</h1>""",
         elem_id="title",
@@ -2364,7 +2365,7 @@ with gr.Blocks(theme="prithivMLmods/Minecraft-Theme", css=css, delete_cache=(60,
             selected_info = gr.Markdown("")
             gallery = gr.Gallery(
                 [(item["image"], item["title"]) for item in loras],
-                label="LoRA DLC's",
+                label="200+ LoRA DLC's",
                 allow_preview=False,
                 columns=3,
                 elem_id="gallery",
