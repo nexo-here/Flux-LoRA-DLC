@@ -11,7 +11,6 @@ import torch
 from PIL import Image
 import gradio as gr
 
-
 from diffusers import (
     DiffusionPipeline,
     AutoencoderTiny,
@@ -211,6 +210,14 @@ loras = [
         "weights": "dalle-mix.safetensors",
         "trigger_word": "dalle-mix"           
     },
+    #Ghibili P@1
+    {
+        "image": "https://huggingface.co/strangerzonehf/Ghibli-Flux-Cartoon-LoRA/resolve/main/images/3333.png",
+        "title": "Ghibli Flux",
+        "repo": "strangerzonehf/Ghibli-Flux-Cartoon-LoRA",
+        "weights": "Ghibili-Cartoon-Art.safetensors",
+        "trigger_word": "Ghibli Art"          
+    },
     #smudge
     {
         "image": "https://huggingface.co/strangerzonehf/Flux-Sketch-Smudge-LoRA/resolve/main/images/5.png",
@@ -250,14 +257,6 @@ loras = [
         "repo": "strangerzonehf/Flux-Super-Blend-LoRA",
         "weights": "Super-Blend.safetensors",
         "trigger_word": "Super Blend"         
-    },
-    #3DXL P@1
-    {
-        "image": "https://huggingface.co/strangerzonehf/Flux-3DXL-Partfile-0001/resolve/main/images/4.png",
-        "title": "3DXLP1",
-        "repo": "strangerzonehf/Flux-3DXL-Partfile-0001",
-        "weights": "3DXLP1.safetensors",
-        "trigger_word": "3DXLP1"          
     },
     #Mixer2.0
     {
@@ -2084,11 +2083,11 @@ loras = [
     },
     #223
     {
-        "image": "https://huggingface.co/strangerzonehf/Flux-3DXL-Partfile-0002/resolve/main/images/44.png",
-        "title": "3DXLP2",
-        "repo": "strangerzonehf/Flux-3DXL-Partfile-0002",
-        "weights": "3DXLP2.safetensors",
-        "trigger_word": "3DXLP2"         
+        "image": "https://huggingface.co/strangerzonehf/Qd-Sketch/resolve/main/images/3.png",
+        "title": "Qd-Sketch",
+        "repo": "strangerzonehf/Qd-Sketch",
+        "weights": "Qd Sketch.safetensors",
+        "trigger_word": "Qd-Sketch"         
     },
     
     #add new
@@ -2349,7 +2348,7 @@ css = '''
 .progress-bar {height: 100%;background-color: #4f46e5;width: calc(var(--current) / var(--total) * 100%);transition: width 0.5s ease-in-out}
 '''
 
-with gr.Blocks(theme="YTheme/Minecraft", css=css, delete_cache=(60, 60)) as app:
+with gr.Blocks(theme=gr.themes.Soft(), css=css, delete_cache=(60, 60)) as app:
     title = gr.HTML(
         """<h1>FLUX LoRA DLC🥳</h1>""",
         elem_id="title",
@@ -2365,7 +2364,7 @@ with gr.Blocks(theme="YTheme/Minecraft", css=css, delete_cache=(60, 60)) as app:
             selected_info = gr.Markdown("")
             gallery = gr.Gallery(
                 [(item["image"], item["title"]) for item in loras],
-                label="200+ LoRA DLC's",
+                label="250+ LoRA DLC's",
                 allow_preview=False,
                 columns=3,
                 elem_id="gallery",
@@ -2378,7 +2377,7 @@ with gr.Blocks(theme="YTheme/Minecraft", css=css, delete_cache=(60, 60)) as app:
             custom_lora_button = gr.Button("Remove custom LoRA", visible=False)
         with gr.Column():
             progress_bar = gr.Markdown(elem_id="progress",visible=False)
-            result = gr.Image(label="Generated Image")
+            result = gr.Image(label="Generated Image", format="png")
 
     with gr.Row():
         with gr.Accordion("Advanced Settings", open=False):
@@ -2421,4 +2420,4 @@ with gr.Blocks(theme="YTheme/Minecraft", css=css, delete_cache=(60, 60)) as app:
     )
 
 app.queue()
-app.launch()
+app.launch(ssr_mode=False)
