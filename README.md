@@ -118,4 +118,6 @@ Contributions are welcome! Feel free to open an issue or submit a pull request i
 
 ## License
 
-Please check the licenses of the underlying models (FLUX.1, TAEF1) and individual LoRAs before using generated images for commercial purposes. The code in this repository itself can be licensed under [Choose a License, e.g., Apache 2.0 or MIT].
+## License
+
+This project is licensed under the Apache License 2.0. See the [LICENSE](LICENSE) file for details. (You'll need to add an Apache 2.0 LICENSE file to your repo).
