@@ -1923,11 +1923,11 @@ loras = [
     },
     #203
     {
-        "image": "https://huggingface.co/MuninStudio/FLUX.1-dev-LoRA-Hard-Flash/resolve/main/images/02.jpg",
-        "title": "Hard Flash",
-        "repo": "MuninStudio/FLUX.1-dev-LoRA-Hard-Flash",
-        "weights": "HRDFLS.safetensors",
-        "trigger_word": "HRDFLS"          
+        "image": "https://huggingface.co/strangerzonehf/Black-of-Art-Flux/resolve/main/images/2222.png",
+        "title": "Black of Art",
+        "repo": "strangerzonehf/Black-of-Art-Flux",
+        "weights": "Black-of-Art.safetensors",
+        "trigger_word": "Black of Art"          
     },
     #204
     {
