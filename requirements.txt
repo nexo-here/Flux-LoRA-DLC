@@ -4,3 +4,5 @@ git+https://github.com/huggingface/accelerate.git
 git+https://github.com/huggingface/transformers.git
 safetensors
 sentencepiece
+spaces
+hf_xet
