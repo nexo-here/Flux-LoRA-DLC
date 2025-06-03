@@ -6,3 +6,4 @@ safetensors
 sentencepiece
 spaces
 hf_xet
+gunicorn
